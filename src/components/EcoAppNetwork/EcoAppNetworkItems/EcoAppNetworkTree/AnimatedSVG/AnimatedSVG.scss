@@ -1,0 +1,13 @@
+svg {
+  width: clamp(70px, 22vw, 350px);
+  height: clamp(90px, 35vw, 600px);
+  margin: 0 auto;
+  display: grid;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+.dot {
+  fill: #15ff11;
+}

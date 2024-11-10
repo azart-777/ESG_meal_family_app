@@ -1,0 +1,62 @@
+@use "./../../shared/styles/mixins/no-user-text-selection" as n;
+@use "./../../shared/styles/mixins/responsive" as r;
+@use "./../../shared/styles/variables/colors" as colors;
+@use "./../../shared/styles/variables/fonts" as fonts;
+
+$font-size-h3-responsive: clamp(24px, 4vw + 1rem, fonts.$font-size-h2);
+
+.welcome-container {
+  width: 100%;
+  @include n.no-user-text-selection;
+
+  &__text {
+    font-size: $font-size-h3-responsive;
+    font-weight: fonts.$font-weight-regular;
+    font-family: "Montserrat";
+    text-align: center;
+    line-height: normal;
+    margin-bottom: clamp(20px, 3vw, 50px);
+    background: colors.$text-secondary-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include r.responsive(tablet) {
+      font-size: clamp(24px, 3vw + 1rem, 90px);
+    }
+
+    @include r.responsive(phone-large) {
+      font-size: clamp(18px, 2.6vw + 1rem, 90px);
+    }
+
+    @include r.responsive(phone) {
+      font-size: clamp(16px, 2.2vw + 0.9rem, 90px);
+    }
+  }
+
+  &__hands-with-planet {
+    position: relative;
+
+    img {
+      max-width: clamp(300px, 50vw, 1110px);
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      z-index: 1;
+      user-select: none;
+      -webkit-user-drag: none;
+      -webkit-touch-callout: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -2px;
+      height: 10%;
+      background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+      z-index: 0;
+    }
+  }
+}

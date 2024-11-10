@@ -1,0 +1,36 @@
+@use './../../../styles/variables/colors' as colors;
+@use './../../../styles/variables/fonts' as fonts;
+@use './../../../styles/mixins/responsive' as r;
+
+$font-size: fonts.$font-size-paragraph;
+$font-weight: 700;
+$line-height: 20px;
+$letter-spacing: -1px;
+
+$text-color: colors.$black-text;
+$background-highlight-color: colors.$app-accent;
+$background-base-color: darken($background-highlight-color,35%);
+
+
+button.MuiButton-root {
+  border-radius: 30px;
+  width: 100%;
+  margin: 16px 0;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  padding: 0 24px;
+  height: 2.4em;
+  text-transform: none;
+  color: $text-color;
+  background: linear-gradient(90deg, $background-highlight-color 23.44%, $background-base-color 100%);
+  letter-spacing: $letter-spacing;
+
+  @include r.responsive(desktop) {
+    font-size: $font-size;
+  }
+
+  &.Mui-disabled {
+    background: linear-gradient(90deg, darken($background-highlight-color,35%) 23.44%, darken($background-base-color, 35%) 100%);
+  }
+}

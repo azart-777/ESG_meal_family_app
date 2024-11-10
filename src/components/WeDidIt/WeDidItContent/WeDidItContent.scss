@@ -1,0 +1,143 @@
+@use "./../../../shared/styles/mixins/no-user-text-selection" as n;
+@use "./../../../shared/styles/mixins/responsive" as r;
+@use "./../../../shared/styles/variables/colors" as colors;
+@use "./../../../shared/styles/variables/fonts" as fonts;
+
+.we-did-it-content {
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__slogan {
+    display: inline-block;
+    position: relative;
+    color: #333;
+    font-family: "Montserrat";
+    font-size: clamp(32px, 6vw, 130px);
+    text-transform: uppercase;
+    background: colors.$text-stroke-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__slogan::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 33px;
+    background-image: url(../../../assets/images/borders/home_company_card_border_top.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__message {
+    font-family: "Inter";
+    font-size: clamp(16px, 2vw, fonts.$font-size-h6);
+    color: colors.$text-white;
+  }
+
+  &__card-list-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    @include r.responsive(tablet) {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include r.responsive(phone-large) {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include r.responsive(phone) {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__card-list {
+    background: colors.$text-stroke-gradient;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 2em;
+    padding: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    @include r.responsive(tablet) {
+      max-width: 450px;
+    }
+    @include r.responsive(phone-large) {
+      max-width: 450px;
+    }
+    @include r.responsive(phone) {
+      max-width: 450px;
+    }
+
+
+    &:last-child {
+      background: colors.$text-stroke-gradient-second;
+    }
+  }
+}
+
+.achievement-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding: 0 50px;
+  background: colors.$base-background-color;
+  border-radius: inherit;
+  @include r.responsive(desktop) {
+    padding: 80px 50px 0;
+    justify-content: flex-start;
+  }
+  @include r.responsive(tablet-large) {
+    padding: 30px 50px 0;
+    justify-content: flex-start;
+  }
+  @include r.responsive(tablet) {
+    justify-content: center;
+    padding: 0 50px;
+  }
+  @include r.responsive(phone-large) {
+    justify-content: center;
+    padding: 0 50px;
+  }
+  @include r.responsive(phone) {
+    justify-content: center;
+    padding: 0 50px;
+  }
+
+
+
+  &__title {
+    font-size: clamp(24px, 3vw, fonts.$font-size-h4);
+    font-family: "Inter";
+    font-weight: fonts.$font-weight-regular;
+    line-height: 48px;
+
+  }
+
+  &__body {
+    padding: 20px;
+  }
+
+  &__list {
+    font-size: clamp(16px, 2vw, fonts.$font-size-h6);
+  }
+
+  &__item {
+    font-family: "Inter";
+    font-weight: fonts.$font-weight-regular;
+    padding: 3px 0;
+  }
+}

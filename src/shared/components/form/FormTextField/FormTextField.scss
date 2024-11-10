@@ -1,0 +1,67 @@
+@use './../../../styles/variables/colors' as colors;
+@use './../../../styles/variables/fonts' as fonts;
+@use './../../../styles/mixins/responsive' as r;
+
+$border--hover: colors.$gray-hover;
+$border--base: colors.$white-text;
+$border--focus: darken(colors.$app-accent, 15%);
+$border--error: colors.$error;
+
+$border-width: 2px;
+
+
+.text-form-field {
+  & .MuiInputBase {
+    &-root {
+      border-radius: 30px;
+      line-height: 2em;
+      font-size: fonts.$font-size-paragraph - 8px;
+
+      @include r.responsive(desktop) {
+        font-size: fonts.$font-size-paragraph - 8px;
+      }
+    }
+    &-input {
+      min-height: 2em !important;
+      line-height: 2em;
+    }
+  }
+  & .MuiFormLabel-root {
+    line-height: 2em;
+    font-size: fonts.$font-size-paragraph - 8px;
+
+    @include r.responsive(desktop) {
+      font-size: fonts.$font-size-paragraph - 8px;
+    }
+
+    &[data-shrink=true] {
+      line-height: 1.435em;
+    }
+  }
+
+  & .MuiInput-root {
+    &:hover:not(.Mui-disabled, .Mui-error) {
+      &::before {
+        border-bottom: $border-width solid $border--hover;
+      }
+    }
+
+    &::before {
+      border-bottom: $border-width solid $border--base;
+    }
+
+    &.Mui-focused {
+      &::after {
+        border-bottom: $border-width solid $border--focus;
+        transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+      }
+    }
+
+    &.Mui-error {
+       &::after {
+         border-bottom: $border-width solid $border--error;
+       }
+     }
+
+  }
+}

@@ -1,0 +1,31 @@
+.overview-component {
+  position: relative;
+
+  img {
+    max-width: clamp(300px, 40vw, 900px);
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20%;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.922),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0)
+    );
+    z-index: 0;
+  }
+}

@@ -1,0 +1,55 @@
+$space--xs: 40px;
+$space--sm: 60px;
+$space--md: 80px;
+$space--l: 100px;
+$space--xl: 120px;
+$space--xxl: 140px;
+$space--3xl: 160px;
+
+@mixin generate-spacing-classes($spaces...) {
+  @each $space in $spaces {
+    $name: nth($space, 1);
+    $value: nth($space, 2);
+
+    .m-#{$name} {
+      margin: $value;
+    }
+    .mt-#{$name} {
+      margin-top: $value;
+    }
+    .mb-#{$name} {
+      margin-bottom: $value;
+    }
+    .ml-#{$name} {
+      margin-left: $value;
+    }
+    .mr-#{$name} {
+      margin-right: $value;
+    }
+    .p-#{$name} {
+      padding: $value;
+    }
+    .pt-#{$name} {
+      padding-top: $value;
+    }
+    .pb-#{$name} {
+      padding-bottom: $value;
+    }
+    .pl-#{$name} {
+      padding-left: $value;
+    }
+    .pr-#{$name} {
+      padding-right: $value;
+    }
+  }
+}
+
+@include generate-spacing-classes(
+    (xs, $space--xs),
+    (sm, $space--sm),
+    (md, $space--md),
+    (l, $space--l),
+    (xl, $space--xl),
+    (xxl, $space--xxl),
+    (3xl, $space--3xl)
+);

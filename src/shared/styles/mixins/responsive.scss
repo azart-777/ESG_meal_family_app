@@ -1,0 +1,50 @@
+$breakpoints: (
+  phone: 480px, // Small phones
+  phone-large: 600px, // Large phones
+  tablet: 768px, // Tablets
+  tablet-large: 992px, // Larger tablets/small laptops
+  desktop: 1200px, // Desktops
+  desktop-large: 1440px // Large desktops
+);
+
+@mixin responsive($media) {
+  @if map-has-key($breakpoints, $media) {
+    $value: map-get($breakpoints, $media);
+
+    @if $media == phone {
+      @media only screen and (max-width: $value) {
+        @content;
+      }
+    }
+    @else if $media == phone-large {
+      @media only screen and (min-width: map-get($breakpoints, phone) + 1) and (max-width: $value) {
+        @content;
+      }
+    }
+    @else if $media == tablet {
+      @media only screen and (min-width: map-get($breakpoints, phone-large) + 1) and (max-width: $value) {
+        @content;
+      }
+    }
+    @else if $media == tablet-large {
+      @media only screen and (min-width: map-get($breakpoints, tablet) + 1) and (max-width: $value) {
+        @content;
+      }
+    }
+    @else if $media == desktop {
+      @media only screen and (min-width: map-get($breakpoints, tablet-large) + 1) and (max-width: $value) {
+        @content;
+      }
+    }
+    @else if $media == desktop-large {
+      @media only screen and (min-width: map-get($breakpoints, desktop) + 1) {
+        @content;
+      }
+    }
+  }
+  @else if $media == pc_tablet {
+    @media only screen and (min-width: map-get($breakpoints, tablet) + 1) {
+      @content;
+    }
+  }
+}

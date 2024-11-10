@@ -1,0 +1,218 @@
+{
+  "iconCardComponent": {
+    "set1": {
+      "cardText1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit quas dicta. Quasi, doloribus. Ullam quod architecto adipisci aliquid eligendi aspernatur, maiores enim, nobis saepe natus, sunt neque iure sit eius eveniet aperiam fugit tempora id perspiciatis! Amet nobis, totam quam ad soluta quod cupiditate fugit sit deleniti, explicabo alias?",
+      "cardText2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit quas dicta. Quasi, doloribus. Ullam quod architecto adipisci aliquid eligendi aspernatur, maiores enim, nobis saepe natus, sunt neque iure sit eius eveniet aperiam fugit tempora id perspiciatis! Amet nobis, totam quam ad soluta quod cupiditate fugit sit deleniti, explicabo alias?",
+      "cardText3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit quas dicta. Quasi, doloribus. Ullam quod architecto adipisci aliquid eligendi aspernatur, maiores enim, nobis saepe natus, sunt neque iure sit eius eveniet aperiam fugit tempora id perspiciatis! Amet nobis, totam quam ad soluta quod cupiditate fugit sit deleniti, explicabo alias?"
+    },
+    "set2": {
+      "cardText1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit quas dicta. Quasi, doloribus. Ullam quod architecto adipisci aliquid eligendi aspernatur, maiores enim, nobis saepe natus, sunt neque iure sit eius eveniet aperiam fugit tempora id perspiciatis! Amet nobis, totam quam ad soluta quod cupiditate fugit sit deleniti, explicabo alias?",
+      "cardText2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit quas dicta. Quasi, doloribus. Ullam quod architecto adipisci aliquid eligendi aspernatur, maiores enim, nobis saepe natus, sunt neque iure sit eius eveniet aperiam fugit tempora id perspiciatis! Amet nobis, totam quam ad soluta quod cupiditate fugit sit deleniti, explicabo alias?",
+      "cardText3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit quas dicta. Quasi, doloribus. Ullam quod architecto adipisci aliquid eligendi aspernatur, maiores enim, nobis saepe natus, sunt neque iure sit eius eveniet aperiam fugit tempora id perspiciatis! Amet nobis, totam quam ad soluta quod cupiditate fugit sit deleniti, explicabo alias?"
+    },
+    "set3": {
+      "cardText1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit quas dicta. Quasi, doloribus. Ullam quod architecto adipisci aliquid eligendi aspernatur, maiores enim, nobis saepe natus, sunt neque iure sit eius eveniet aperiam fugit tempora id perspiciatis! Amet nobis, totam quam ad soluta quod cupiditate fugit sit deleniti, explicabo alias?",
+      "cardText2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit quas dicta. Quasi, doloribus. Ullam quod architecto adipisci aliquid eligendi aspernatur, maiores enim, nobis saepe natus, sunt neque iure sit eius eveniet aperiam fugit tempora id perspiciatis! Amet nobis, totam quam ad soluta quod cupiditate fugit sit deleniti, explicabo alias?",
+      "cardText3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit quas dicta. Quasi, doloribus. Ullam quod architecto adipisci aliquid eligendi aspernatur, maiores enim, nobis saepe natus, sunt neque iure sit eius eveniet aperiam fugit tempora id perspiciatis! Amet nobis, totam quam ad soluta quod cupiditate fugit sit deleniti, explicabo alias?"
+    }
+  },
+  "contactUs": {
+    "title": "contact us",
+    "form": {
+      "userSummary": {
+        "question": "What`s your message about?",
+        "options": {
+          "1": "I would like to become a ESG MEAL family Partner",
+          "2": "I have some proposition/suggestion",
+          "3": "I have some feedback",
+          "4": "I'd like to work with you",
+          "5": "I'd like to chat"
+        }
+      },
+      "userName": "Name",
+      "userEmail": "Email",
+      "userMessage": "Message",
+      "info": {
+        "newLine": "New Line",
+        "push": "push"
+      },
+      "buttons": {
+        "shift": "Shift",
+        "enter": "Enter",
+        "submit": "Submit"
+      }
+    }
+  },
+  "treeInfo": {
+    "data1": {
+      "sections": [
+        {
+          "heading": "For",
+          "subheading": "Fitness Enthusiasts",
+          "items": [
+            "Maintain a balanced diet",
+            "Exercise regularly",
+            "Stay hydrated",
+            "Get enough sleep"
+          ]
+        },
+        {
+          "heading": "For",
+          "subheading": "Mental Wellness",
+          "items": [
+            "Practice mindfulness",
+            "Take breaks",
+            "Connect with loved ones",
+            "Seek professional help if needed"
+          ]
+        }
+      ]
+    },
+    "data2": {
+      "sections": [
+        {
+          "heading": "For",
+          "subheading": "Consumers",
+          "items": [
+            "Enjoy good food at less price",
+            "Save your money",
+            "Explore a world of deliciousness",
+            "Save time and money for your next adventure",
+            "Save the planet from excess waste"
+          ]
+        },
+        {
+          "heading": "For",
+          "subheading": "Business",
+          "items": [
+            "Explore a world of deliciousness",
+            "Discover unique cuisines and local favourites just from your phone",
+            "Save time and money for your next adventure",
+            "Enjoy high-quality food finds"
+          ]
+        }
+      ]
+    },
+    "data3": {
+      "sections": [
+        {
+          "heading": "For",
+          "subheading": "Entrepreneurs",
+          "items": [
+            "Gain valuable insights",
+            "Boost your business",
+            "Connect with peers",
+            "Learn from the best"
+          ]
+        },
+        {
+          "heading": "For",
+          "subheading": "Investors",
+          "items": [
+            "Find new opportunities",
+            "Maximize returns",
+            "Diversify portfolio",
+            "Stay ahead of the market"
+          ]
+        }
+      ]
+    }
+  },
+  "mainSlogan": {
+    "slogan": "EAT WELL, SPEND LESS, <br /> AND <br /> MAKE YOUR PLANET SMILE"
+  },
+
+  "welcomeText": {
+    "text": "Welcome to the Cheap-It Family!"
+  },
+
+  "DescriptionCompanyCards": {
+    "cheapITDescription": {
+      "slogan": "We wanted to create <br /> something unique!",
+      "message": "Feeling hungry??? Save the Planet!",
+      "sentence1": "Discover a world of new flavours",
+      "sentence2": "Save time and money for your next adventure",
+      "sentence3": "Enjoy high quality food",
+      "sentence4": "Save the planet!",
+      "shortDescription": "cheap it - a platform for delicious food at affordable prices!"
+    },
+    "mealCountDescription": {
+      "slogan": "SOMETHING REALLY <br /> IMPORTANT!",
+      "message": "Don't know what to eat??? Save the planet!",
+      "sentence1": "Personalise your ration",
+      "sentence2": "Don't waste money on unnecessary calories",
+      "sentence3": "Enjoy the variety of recipes",
+      "sentence4": "Save the planet!",
+      "shortDescription": "Meal Count - your own menu, right in your smartphone!"
+    },
+    "ecoMealMarketDescription": {
+      "slogan": "Something that will <br /> really change the <br /> world!",
+      "message": "Fancy something fresh??? Save the planet!",
+      "sentence1": "Order in advance",
+      "sentence2": "Eat fresh every day",
+      "sentence3": "Support local producers",
+      "sentence4": "Save the planet!",
+      "shortDescription": "eco meal market - your own eco-farm in your smartphone!"
+    }
+  },
+
+  "WeDidIt": {
+    "slogan": "And we did it!",
+    "message": "The comprehensive food optimisation system ‘Cheap-It Family’ is an innovative step towards reducing food waste!",
+
+    "CardBusiness": {
+      "title": "Business",
+      "sentence1": "Data analysis",
+      "sentence2": "Waste reduction by up to 30%",
+      "sentence3": "Optimisation of logistics and storage",
+      "sentence4": "Revenue increase",
+      "sentence5": "Sustainable development promotion"
+    },
+
+    "CardClient": {
+      "title": "Client",
+      "sentence1": "Fresh and high-quality products",
+      "sentence2": "Less wasteful spending",
+      "sentence3": "More healthy food choices",
+      "sentence4": "Reduced food waste",
+      "sentence5": "Support for sustainable consumption"
+    },
+    "shortDescription": "cheap-it family - win-win for all!"
+  },
+  "footer": {
+    "menu": "Menu",
+    "home": "Home",
+    "forClient": "For Client",
+    "forBusiness": "For Business",
+    "ourPartners": "Our Partners",
+    "aboutUs": "About Us",
+    "support": "Support",
+    "contactUs": "Contact Us",
+    "faqClients": "FAQ clients",
+    "faqBusiness": "FAQ business",
+    "faqPartners": "FAQ partners",
+    "agreement": "Agreement",
+    "privacyPolicy": "Privacy Policy",
+    "business": "Business",
+    "clients": "Clients",
+    "partners": "Partners",
+    "termsAndConditions": "Terms & Conditions",
+    "map": "Map",
+    "ukraine": "Ukraine",
+    "priceAndSubscriptions": "Price & Subscriptions",
+    "subscriptionsPlans": "Subscriptions plans",
+    "media": "Media",
+    "materialsForMedia": "Materials for media"
+  },
+
+  "EcoAppNetworkComponent": {
+    "altEarthImg": "Planet Earth surrounded by flowers and plants around the edge. Displays green forests and blue oceans.",
+    "shortText": "cheap-it family - win-win for all!"
+  },
+
+  "EcoAppNetworkItems": {
+    "altPhoneMealCountImg": "Smartphone with the Meal Count logo displayed on the screen.",
+    "altPhoneCheapItImg": "Smartphone with the Cheap It logo displayed on the screen.",
+    "altPhoneEcoMealImg": "Smartphone with the Eco Meal Market logo displayed on the screen."
+  }
+}

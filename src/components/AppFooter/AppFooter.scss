@@ -1,0 +1,150 @@
+@use "./../../shared/styles/mixins/responsive" as r;
+
+.footer {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    border-top: 1px solid #444;
+
+    @include r.responsive(tablet-large) {
+      justify-content: center;
+      flex-direction: column;
+    }
+    @include r.responsive(tablet) {
+      justify-content: center;
+      flex-direction: column;
+    }
+    @include r.responsive(phone-large) {
+      justify-content: center;
+      flex-direction: column;
+    }
+    @include r.responsive(phone) {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    gap: 30px;
+    text-transform: uppercase;
+
+    @include r.responsive(tablet-large) {
+      width: 100%;
+      order: 1;
+      text-align: center;
+      justify-content: space-around;
+    }
+    @include r.responsive(tablet) {
+      width: 100%;
+      order: 1;
+      text-align: center;
+      justify-content: space-around;
+    }
+    @include r.responsive(phone-large) {
+      width: 100%;
+      order: 1;
+      text-align: center;
+      justify-content: space-around;
+    }
+    @include r.responsive(phone) {
+      width: 100%;
+      order: 1;
+      text-align: center;
+      justify-content: space-around;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 16px;
+    
+
+    @include r.responsive(tablet-large) {
+      font-size: 12px;
+    }
+    @include r.responsive(tablet) {
+      font-size: 12px;
+    }
+    @include r.responsive(phone-large) {
+      font-size: 12px;
+    }
+    @include r.responsive(phone) {
+      font-size: 12px;
+    }
+  }
+
+  &__icon-map {
+    padding-right: 10px;
+    padding-bottom: 15px;
+    @include r.responsive(phone) {
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 20px;
+
+    @include r.responsive(tablet-large) {
+      order: 2;
+    }
+    @include r.responsive(tablet) {
+      order: 2;
+    }
+    @include r.responsive(phone-large) {
+      order: 2;
+    }
+    @include r.responsive(phone) {
+      order: 2;
+    }
+  }
+
+  &__link {
+    display: flex;
+
+    @include r.responsive(tablet-large) {
+      padding-top: 20px;
+    }
+    @include r.responsive(tablet) {
+      padding-top: 20px;
+    }
+    @include r.responsive(phone-large) {
+      padding-top: 20px;
+    }
+    @include r.responsive(phone) {
+      padding-top: 20px;
+    }
+
+
+    .footer__icon {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.2);
+        @include r.responsive(tablet-large) {
+          transform: none;
+        }
+        @include r.responsive(tablet) {
+          transform: none;
+        }
+        @include r.responsive(phone-large) {
+          transform: none;
+        }
+        @include r.responsive(phone) {
+          transform: none;
+        }
+      }
+    }
+  }
+}
