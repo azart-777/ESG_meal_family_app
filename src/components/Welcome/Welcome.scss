@@ -3,7 +3,8 @@
 @use "./../../shared/styles/variables/colors" as colors;
 @use "./../../shared/styles/variables/fonts" as fonts;
 
-$font-size-h3-responsive: clamp(24px, 4vw + 1rem, fonts.$font-size-h2);
+$font-size-h2: fonts.$font-size-h2;
+$font-size-h3-responsive: clamp(24px, 4vw + 1rem, $font-size-h2);
 
 .welcome-container {
   width: 100%;
@@ -12,7 +13,7 @@ $font-size-h3-responsive: clamp(24px, 4vw + 1rem, fonts.$font-size-h2);
   &__text {
     font-size: $font-size-h3-responsive;
     font-weight: fonts.$font-weight-regular;
-    font-family: "Montserrat";
+    font-family: "Montserrat", serif;
     text-align: center;
     line-height: normal;
     margin-bottom: clamp(20px, 3vw, 50px);

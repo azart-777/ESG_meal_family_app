@@ -3,9 +3,12 @@
 @use "./../../shared/styles/variables/colors" as colors;
 @use "./../../shared/styles/variables/fonts" as fonts;
 
+$font-size-h6: fonts.$font-size-h6;
+$font-size-paragraph: fonts.$font-size-paragraph;
 $text-color--accent: colors.$primary-green;
-$font-size-h6-responsive: clamp(20px, 3vw, fonts.$font-size-h6);
-$font-size-paragraph-responsive: clamp(16px, 3vw, fonts.$font-size-paragraph);
+
+$font-size-h6-responsive: clamp(20px, 3vw, $font-size-h6);
+$font-size-paragraph-responsive: clamp(16px, 3vw, $font-size-paragraph);
 
 .header {
   height: clamp(110px, 20vw, 180px);
@@ -34,7 +37,7 @@ $font-size-paragraph-responsive: clamp(16px, 3vw, fonts.$font-size-paragraph);
     .logo__text {
       font-size: $font-size-paragraph-responsive;
       font-weight: fonts.$font-weight-semibold;
-      font-family: "Montserrat";
+      font-family: "Montserrat", serif;
       text-transform: uppercase;
 
       span {
@@ -48,7 +51,6 @@ $font-size-paragraph-responsive: clamp(16px, 3vw, fonts.$font-size-paragraph);
   }
 
   &__language-switch-container {
-    margin-right: clamp(2px, 1vw, 10px);
     position: absolute;
     right: 0;
     margin-right: 20px;
