@@ -1,0 +1,37 @@
+@use "./../../../shared/styles/mixins/no-user-text-selection" as n;
+@use "./../../../shared/styles/mixins/responsive" as r;
+@use "./../../../shared/styles/variables/colors" as colors;
+@use "./../../../shared/styles/variables/fonts" as fonts;
+
+$font-size-h3: fonts.$font-size-h3;
+$font-size-h3-responsive: clamp(24px, 3vw + 1rem, $font-size-h3);
+
+.main-slogan {
+  width: 100%;
+  padding: clamp(20px, 3vw, 50px) 0;
+  @include n.no-user-text-selection;
+
+  &__text {
+    font-size: $font-size-h3-responsive;
+    font-weight: fonts.$font-weight-semibold;
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: calc(#{$font-size-h3-responsive} * 1);
+    background: colors.$text-primary-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include r.responsive(tablet) {
+      font-size: clamp(24px, 2vw + 1rem, 85px);
+    }
+
+    @include r.responsive(phone-large) {
+      font-size: clamp(18px, 1.6vw + 1rem, 85px);
+    }
+
+    @include r.responsive(phone) {
+      font-size: clamp(16px, 1.2vw + 0.9rem, 85px);
+    }
+  }
+}

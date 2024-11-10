@@ -1,3 +1,3 @@
-import Home from './Home/Home'
+import ChipItLanding from './ChipItLanding/ChipItLanding'
 
-export { Home }
+export { ChipItLanding }

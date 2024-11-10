@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .App {
   background-color: colors.$base-background-color;
   color: colors.$base-white-color;

@@ -1,0 +1,111 @@
+@use "./../../../shared/styles/mixins/no-user-text-selection" as n;
+@use "./../../../shared/styles/mixins/responsive" as r;
+@use "./../../../shared/styles/variables/colors" as colors;
+@use "./../../../shared/styles/variables/fonts" as fonts;
+
+$font-size-h4: fonts.$font-size-h4;
+$text-color--accent: colors.$primary-green;
+$company-card-border-bottom-url: url("../../../assets/images/borders/home_company_card_border_bottom.svg");
+$left-green-eclipse-url: url("../../../assets/images/eclipse/left_green.avif");
+$right-green-eclipse-url: url("../../../assets/images/eclipse/right_green.avif");
+
+$font-size-h4-responsive: clamp(14px, 3vw, $font-size-h4);
+$font-size-logo-responsive: clamp(14px, 3vw, 62px);
+
+.eco-app-network {
+  position: relative;
+
+  &__contain {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: clamp(50px, 5vw, 100px) auto clamp(75px, 5vw, 150px);
+    padding: 0 clamp(5px, 2vw, 15px);
+
+    &-earth {
+      width: clamp(320px, 80vw, 1200px);
+      margin-top: clamp(10px, 8vw, 130px);
+      position: relative;
+      z-index: 5;
+
+      &-image {
+        width: 100%;
+        user-select: none;
+        -webkit-user-drag: none;
+        -webkit-touch-callout: none;
+      }
+
+      &-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+
+        .logo__image {
+          max-width: clamp(65px, 25vw, 240px);
+          height: clamp(45px, 15vw, 195px);
+          margin-bottom: clamp(16px, 3vw, 42px);
+          user-select: none;
+          -webkit-user-drag: none;
+          -webkit-touch-callout: none;
+          filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 1));
+        }
+
+        .logo__text {
+          font-size: $font-size-logo-responsive;
+          font-weight: fonts.$font-weight-bold;
+          font-family: "Montserrat", serif;
+          text-transform: uppercase;
+          text-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+
+          span {
+            color: $text-color--accent;
+          }
+        }
+      }
+    }
+
+    &-short-description {
+      width: 100%;
+      font-size: $font-size-h4-responsive;
+      font-weight: fonts.$font-weight-bold;
+      font-family: "Montserrat", serif;
+      line-height: calc(#{$font-size-h4-responsive} * 1);
+      padding: 0 10px clamp(5px, 1vw, 15px);
+      background-image: $company-card-border-bottom-url;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+    }
+  }
+
+  &__light-ellipse-left {
+    width: clamp(150px, 30vw, 600px);
+    height: 100%;
+    background-image: $left-green-eclipse-url;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    position: absolute;
+    bottom: clamp(5px, 10vw, 150px);
+    left: 0;
+  }
+
+  &__light-ellipse-right {
+    width: clamp(150px, 30vw, 600px);
+    height: 100%;
+    background-image: $right-green-eclipse-url;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    top: clamp(150px, 30vw, 350px);
+    right: 0;
+  }
+}

@@ -1,0 +1,51 @@
+$move-up-arrow-url: url("../../../assets/images/arrows/move_up_arrow.svg");
+$move-up-arrow-url--colored: url("../../../assets/images/arrows/move_up_arrow_color.svg");
+
+#move-up-arrow {
+  width: clamp(60px, 6vw, 100px);
+  aspect-ratio: 1/1;
+  background-image: $move-up-arrow-url;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #282c34d8;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  z-index: 200;
+  cursor: pointer;
+  animation: triangle 4s both infinite;
+  transition: bottom 0.4s ease, background-image 0.5s ease, opacity 0.4s ease;
+  opacity: 1;
+
+  &.move-up-arrow.move-up-arrow--bottom {
+    bottom: clamp(170px, 18vw, 180px);
+  }
+
+  &:hover {
+    background-image: $move-up-arrow-url--colored;
+  }
+
+  &.move-up-arrow--hidden {
+    opacity: 0; 
+    pointer-events: none; 
+  }
+
+  @keyframes triangle {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(15px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+
+

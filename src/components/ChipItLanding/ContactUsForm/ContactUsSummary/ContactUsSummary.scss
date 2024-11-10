@@ -1,0 +1,99 @@
+@use './../../../../shared/styles/mixins/no-user-text-selection' as n;
+@use './../../../../shared/styles/mixins/responsive' as r;
+@use './../../../../shared/styles/variables/colors' as colors;
+@use './../../../../shared/styles/variables/fonts' as fonts;
+
+$box-border--error: colors.$error;
+$box-border--selected: colors.$primary-green;
+
+$font-size--question: fonts.$font-size-h6;
+$font-size--container: fonts.$font-size-paragraph;
+
+$border-width: 2px;
+
+.form-summary {
+  &.error {
+    .form-summary__option {
+      &-item {
+        border-color: $box-border--error;
+      }
+    }
+  }
+
+  &__question-text {
+    font-size: $font-size--question;
+    color: colors.$text-white;
+    opacity: 0.6;
+    line-height: 20px;
+
+    @include r.responsive(desktop) {
+      font-size: $font-size--question - 8px;
+    }
+
+    @include r.responsive(tablet) {
+      font-size: $font-size--question - 8px;
+    }
+
+    @include r.responsive(phone-large) {
+      font-size: $font-size--question - 8px;
+    }
+
+    @include r.responsive(phone) {
+      font-size: $font-size--question - 8px;
+    }
+  }
+
+  &__option {
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    &-item {
+      flex: 0 1 calc(33.33% - 20px);
+      font-size: $font-size--container;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      box-sizing: border-box;
+      text-align: left;
+      cursor: pointer;
+      border-bottom: solid 1px colors.$black-5;
+      padding: 15px 0;
+
+      @include r.responsive(desktop) {
+        font-size: $font-size--container - 8px;
+      }
+
+      @include r.responsive(tablet) {
+        font-size: $font-size--container - 8px;
+      }
+
+      @include r.responsive(phone-large) {
+        font-size: $font-size--container - 8px;
+      }
+
+      @include r.responsive(phone) {
+        font-size: $font-size--container - 8px;
+      }
+
+      &-container {
+        width: 100%;
+      }
+
+      &.selected {
+        border-color: $box-border--selected;
+      }
+
+      @include r.responsive(tablet) {
+        flex: 0 1 calc(50% - 20px);
+      }
+      @include r.responsive(phone-large) {
+        flex: 0 1 calc(50% - 20px);
+      }
+      @include r.responsive(phone) {
+        flex: 0 1 calc(100% - 20px);
+      }
+    }
+  }
+}
