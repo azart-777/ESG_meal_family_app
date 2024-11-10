@@ -2,16 +2,21 @@ import { Suspense, StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import store from "./redux-store/store/store";
 import './i18n';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
+
 root.render(
     <Suspense fallback="...is loading">
-        <StrictMode>
-            <App />
-        </StrictMode>
+        <Provider store={store}>
+            <StrictMode>
+                <App />
+            </StrictMode>
+        </Provider>
     </Suspense>
 );
 

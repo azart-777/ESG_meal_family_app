@@ -1,12 +1,12 @@
-@use "./../../../shared/styles/mixins/no-user-text-selection" as n;
-@use "./../../../shared/styles/mixins/responsive" as r;
-@use "./../../../shared/styles/variables/colors" as colors;
-@use "./../../../shared/styles/variables/fonts" as fonts;
+@use "./../../shared/styles/mixins/no-user-text-selection" as n;
+@use "./../../shared/styles/mixins/responsive" as r;
+@use "./../../shared/styles/variables/colors" as colors;
+@use "./../../shared/styles/variables/fonts" as fonts;
 
 $background-color: colors.$base-background-color;
 $text-color--accent: colors.$primary-green;
-$language-switch-frame-1 :url("../../../assets/images/vectors/language_switch_frame_1.svg");
-$language-switch-frame-2 :url("../../../assets/images/vectors/language_switch_frame_2.svg");
+$language-switch-frame-1 :url("../../assets/images/vectors/language_switch_frame_1.svg");
+$language-switch-frame-2 :url("../../assets/images/vectors/language_switch_frame_2.svg");
 
 $font-size-toggle-button-responsive: clamp(14px, 2vw, 22px);
 

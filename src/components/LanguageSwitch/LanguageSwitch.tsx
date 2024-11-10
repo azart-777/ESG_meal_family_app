@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./LanguageSwitch.scss";
-import { useLanguage } from "../../../shared/hooks/useLanguage";
+import { useLanguage } from "../../shared/hooks/useLanguage";
 
 export const LanguageSwitch: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
