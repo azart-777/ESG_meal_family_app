@@ -35,7 +35,16 @@
     "@babel/preset-react": "^7.25.9",
     "@babel/preset-typescript": "^7.26.0",
     "@cfaester/enzyme-adapter-react-18": "^0.7.1",
+    "@chromatic-com/storybook": "^3.2.2",
     "@jest/globals": "^29.7.0",
+    "@storybook/addon-essentials": "^8.4.2",
+    "@storybook/addon-interactions": "^8.4.2",
+    "@storybook/addon-onboarding": "^8.4.2",
+    "@storybook/blocks": "^8.4.2",
+    "@storybook/preset-create-react-app": "^8.4.2",
+    "@storybook/react": "^8.4.2",
+    "@storybook/react-webpack5": "^8.4.2",
+    "@storybook/test": "^8.4.2",
     "@testing-library/jest-dom": "^6.6.3",
     "@types/enzyme": "^3.10.18",
     "cheerio": "^1.0.0-rc.10",
@@ -45,6 +54,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "prop-types": "^15.8.1",
     "sass": "^1.77.8",
+    "storybook": "^8.4.2",
     "ts-node": "^10.9.2",
     "util": "^0.12.5",
     "webpack": "5.94.0"
@@ -53,7 +63,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --watch",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "browserslist": {
     "production": [
