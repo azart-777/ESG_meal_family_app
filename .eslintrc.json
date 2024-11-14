@@ -1,22 +1,33 @@
 {
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "prettier"
   ],
-  "env": {
-    "es6": true,
-    "browser": true,
-    "node": true
+  "plugins": ["react", "react-hooks"],
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "eqeqeq": ["error", "always"],
+    "prettier/prettier": ["error"],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "semi": ["error", "always"],
+    "no-debugger": "error",
+
+    // React-Specific Rules
+    "react/jsx-uses-vars": "error",
+    "react/jsx-no-target-blank": "warn",
+    "react/self-closing-comp": "warn",
+    "react/jsx-key": "error",
+
+    // React Hooks Rules
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "settings": {
-    "import/resolver": {
-      "typescript": {}
+    "react": {
+      "version": "detect"
     }
-  },
-  "rules": {
-    "@typescript-eslint/no-empty-function": "off"
   }
 }
