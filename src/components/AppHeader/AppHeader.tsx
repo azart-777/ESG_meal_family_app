@@ -1,7 +1,7 @@
-import React from "react";
-import "./AppHeader.scss";
-import { LanguageSwitch } from "../LanguageSwitch/LanguageSwitch";
-import { MainCompanyLogo } from "../../shared/components/mainCompanyLogo/MainCompanyLogo";
+import React from 'react';
+import './AppHeader.scss';
+import { LanguageSwitch } from '../LanguageSwitch/LanguageSwitch';
+import { MainCompanyLogo } from '../../shared/components/mainCompanyLogo/MainCompanyLogo';
 
 export const AppHeader: React.FC = () => {
   return (

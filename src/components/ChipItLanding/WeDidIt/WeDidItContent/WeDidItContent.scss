@@ -1,7 +1,7 @@
-@use "./../../../../shared/styles/mixins/no-user-text-selection" as n;
-@use "./../../../../shared/styles/mixins/responsive" as r;
-@use "./../../../../shared/styles/variables/colors" as colors;
-@use "./../../../../shared/styles/variables/fonts" as fonts;
+@use './../../../../shared/styles/mixins/no-user-text-selection' as n;
+@use './../../../../shared/styles/mixins/responsive' as r;
+@use './../../../../shared/styles/variables/colors' as colors;
+@use './../../../../shared/styles/variables/fonts' as fonts;
 
 $company-card-border-top-url: url(../../../../assets/images/borders/home_company_card_border_top.svg);
 $font-size-h4: fonts.$font-size-h4;
@@ -18,7 +18,7 @@ $font-size-h6: fonts.$font-size-h6;
     display: inline-block;
     position: relative;
     color: #333;
-    font-family: "Montserrat", serif;
+    font-family: 'Montserrat', serif;
     font-size: clamp(32px, 6vw, 130px);
     text-transform: uppercase;
     background: colors.$text-stroke-gradient;
@@ -37,7 +37,7 @@ $font-size-h6: fonts.$font-size-h6;
   }
 
   &__message {
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-size: clamp(16px, 2vw, $font-size-h6);
     color: colors.$text-white;
   }
@@ -83,7 +83,6 @@ $font-size-h6: fonts.$font-size-h6;
       max-width: 450px;
     }
 
-
     &:last-child {
       background: colors.$text-stroke-gradient-second;
     }
@@ -120,14 +119,11 @@ $font-size-h6: fonts.$font-size-h6;
     padding: 0 50px;
   }
 
-
-
   &__title {
     font-size: clamp(24px, 3vw, $font-size-h4);
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-weight: fonts.$font-weight-regular;
     line-height: 48px;
-
   }
 
   &__body {
@@ -139,7 +135,7 @@ $font-size-h6: fonts.$font-size-h6;
   }
 
   &__item {
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-weight: fonts.$font-weight-regular;
     padding: 3px 0;
   }

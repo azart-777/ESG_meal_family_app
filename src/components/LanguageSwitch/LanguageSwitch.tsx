@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
-import "./LanguageSwitch.scss";
-import { useLanguage } from "../../shared/hooks/useLanguage";
+import React, { useState, useEffect, useRef } from 'react';
+import './LanguageSwitch.scss';
+import { useLanguage } from '../../shared/hooks/useLanguage';
 
 export const LanguageSwitch: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,38 +29,33 @@ export const LanguageSwitch: React.FC = () => {
 
   const handleMouseLeave = () => {
     if (!isOpen) {
-      anchorRef.current?.classList.remove("hover");
+      anchorRef.current?.classList.remove('hover');
     }
   };
 
   const handleMouseEnter = () => {
     if (!isOpen) {
-      anchorRef.current?.classList.add("hover");
+      anchorRef.current?.classList.add('hover');
     }
   };
 
   return (
-    <div className={`language_menu ${isOpen ? "active" : ""}`}>
+    <div className={`language_menu ${isOpen ? 'active' : ''}`}>
       <button
-        className={`toggle ${isOpen ? "closed" : ""}`}
+        className={`toggle ${isOpen ? 'closed' : ''}`}
         ref={anchorRef}
         onClick={toggleMenu}
         onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
+        onMouseLeave={handleMouseLeave}>
         {selectedLanguage.abbreviation}
       </button>
       <ul>
         {languages.map((language, index) => (
           <li
             key={language.code}
-            className={`nav-icon ${liVisible ? "visible" : ""}`}
-            style={{ "--i": index } as React.CSSProperties}
-          >
-            <button
-              rel="noopener noreferrer"
-              onClick={() => handleLanguageChange(language.code)}
-            >
+            className={`nav-icon ${liVisible ? 'visible' : ''}`}
+            style={{ '--i': index } as React.CSSProperties}>
+            <button rel="noopener noreferrer" onClick={() => handleLanguageChange(language.code)}>
               {language.abbreviation}
             </button>
           </li>

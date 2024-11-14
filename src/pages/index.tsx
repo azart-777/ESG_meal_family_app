@@ -1,3 +1,3 @@
-import ChipItLanding from './ChipItLanding/ChipItLanding'
+import ChipItLanding from './ChipItLanding/ChipItLanding';
 
-export { ChipItLanding }
+export { ChipItLanding };

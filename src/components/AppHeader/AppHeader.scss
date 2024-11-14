@@ -1,7 +1,7 @@
-@use "./../../shared/styles/mixins/responsive" as r;
-@use "./../../shared/styles/mixins/no-user-text-selection" as n;
-@use "./../../shared/styles/variables/colors" as colors;
-@use "./../../shared/styles/variables/fonts" as fonts;
+@use './../../shared/styles/mixins/responsive' as r;
+@use './../../shared/styles/mixins/no-user-text-selection' as n;
+@use './../../shared/styles/variables/colors' as colors;
+@use './../../shared/styles/variables/fonts' as fonts;
 
 $font-size-h6: fonts.$font-size-h6;
 $font-size-paragraph: fonts.$font-size-paragraph;
@@ -37,7 +37,7 @@ $font-size-paragraph-responsive: clamp(16px, 3vw, $font-size-paragraph);
     .logo__text {
       font-size: $font-size-paragraph-responsive;
       font-weight: fonts.$font-weight-semibold;
-      font-family: "Montserrat", serif;
+      font-family: 'Montserrat', serif;
       text-transform: uppercase;
 
       span {

@@ -36,7 +36,8 @@ $font-size--info-icon: 22px;
       align-items: center;
     }
 
-    &-right-container-box, &-left-container {
+    &-right-container-box,
+    &-left-container {
       width: 42%;
 
       @include r.responsive(tablet-large) {
@@ -134,11 +135,14 @@ $font-size--info-icon: 22px;
       }
     }
 
-    &-user-name, &-user-email, &-user-message{
+    &-user-name,
+    &-user-email,
+    &-user-message {
       margin-bottom: 5px;
     }
 
-    &-user-name, &-user-email{
+    &-user-name,
+    &-user-email {
       height: 100px;
     }
 

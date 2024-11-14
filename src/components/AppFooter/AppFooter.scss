@@ -1,4 +1,4 @@
-@use "./../../shared/styles/mixins/responsive" as r;
+@use './../../shared/styles/mixins/responsive' as r;
 
 .footer {
   &__container {
@@ -63,9 +63,8 @@
   &__text {
     display: flex;
     align-items: center;
-    font-family: "Montserrat";
+    font-family: 'Montserrat', serif;
     font-size: 16px;
-    
 
     @include r.responsive(tablet-large) {
       font-size: 12px;
@@ -123,7 +122,6 @@
     @include r.responsive(phone) {
       padding-top: 20px;
     }
-
 
     .footer__icon {
       width: 32px;

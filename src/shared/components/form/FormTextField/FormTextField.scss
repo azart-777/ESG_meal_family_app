@@ -9,7 +9,6 @@ $border--error: colors.$error;
 
 $border-width: 2px;
 
-
 .text-form-field {
   & .MuiInputBase {
     &-root {
@@ -34,7 +33,7 @@ $border-width: 2px;
       font-size: fonts.$font-size-paragraph - 8px;
     }
 
-    &[data-shrink=true] {
+    &[data-shrink='true'] {
       line-height: 1.435em;
     }
   }
@@ -53,15 +52,14 @@ $border-width: 2px;
     &.Mui-focused {
       &::after {
         border-bottom: $border-width solid $border--focus;
-        transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+        transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
       }
     }
 
     &.Mui-error {
-       &::after {
-         border-bottom: $border-width solid $border--error;
-       }
-     }
-
+      &::after {
+        border-bottom: $border-width solid $border--error;
+      }
+    }
   }
 }

@@ -1,7 +1,7 @@
-@use "./../../../../shared/styles/mixins/no-user-text-selection" as n;
-@use "./../../../../shared/styles/mixins/responsive" as r;
-@use "./../../../../shared/styles/variables/colors" as colors;
-@use "./../../../../shared/styles/variables/fonts" as fonts;
+@use './../../../../shared/styles/mixins/no-user-text-selection' as n;
+@use './../../../../shared/styles/mixins/responsive' as r;
+@use './../../../../shared/styles/variables/colors' as colors;
+@use './../../../../shared/styles/variables/fonts' as fonts;
 
 $font-size-h1: fonts.$font-size-h1;
 $font-size-h4: fonts.$font-size-h4;
@@ -31,7 +31,7 @@ $font-size-paragraph-responsive: clamp(12px, 1.2vw, $font-size-paragraph);
         font-size: $font-size-h1-responsive;
         font-weight: fonts.$font-weight-regular;
         padding-top: 30px;
-        font-family: "Inter", serif;
+        font-family: 'Inter', serif;
         text-transform: uppercase;
         line-height: calc(#{$font-size-h1-responsive} * 1);
         background: colors.$text-primary-gradient;
@@ -71,7 +71,7 @@ $font-size-paragraph-responsive: clamp(12px, 1.2vw, $font-size-paragraph);
       &-message {
         font-size: $font-size-h5-responsive;
         font-weight: fonts.$font-weight-regular;
-        font-family: "Inter", serif;
+        font-family: 'Inter', serif;
         line-height: calc(#{$font-size-h5-responsive} * 1);
         margin-bottom: 16px;
         background: colors.$text-primary-gradient;
@@ -85,7 +85,7 @@ $font-size-paragraph-responsive: clamp(12px, 1.2vw, $font-size-paragraph);
         &-item {
           font-size: $font-size-paragraph-responsive;
           font-weight: fonts.$font-weight-regular;
-          font-family: "Inter", serif;
+          font-family: 'Inter', serif;
         }
       }
     }
@@ -94,7 +94,7 @@ $font-size-paragraph-responsive: clamp(12px, 1.2vw, $font-size-paragraph);
   &__short-description {
     font-size: $font-size-h4-responsive;
     font-weight: fonts.$font-weight-bold;
-    font-family: "Montserrat", serif;
+    font-family: 'Montserrat', serif;
     line-height: calc(#{$font-size-h4-responsive} * 1);
     padding: 0 20px clamp(5px, 1vw, 15px);
     background-image: $border-bottom-url;

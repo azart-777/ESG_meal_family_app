@@ -50,9 +50,13 @@
     "cheerio": "^1.0.0-rc.10",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "husky": "^8.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "prop-types": "^15.8.1",
     "sass": "^1.77.8",
@@ -65,6 +69,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --watch",
+    "lint": "npx eslint . --fix",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -82,9 +87,10 @@
       "last 1 safari version"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npx prettier --write ."
-    }
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }

@@ -1,5 +1,5 @@
-$move-up-arrow-url: url("../../../assets/images/arrows/move_up_arrow.svg");
-$move-up-arrow-url--colored: url("../../../assets/images/arrows/move_up_arrow_color.svg");
+$move-up-arrow-url: url('../../../assets/images/arrows/move_up_arrow.svg');
+$move-up-arrow-url--colored: url('../../../assets/images/arrows/move_up_arrow_color.svg');
 
 #move-up-arrow {
   width: clamp(60px, 6vw, 100px);
@@ -16,7 +16,10 @@ $move-up-arrow-url--colored: url("../../../assets/images/arrows/move_up_arrow_co
   z-index: 200;
   cursor: pointer;
   animation: triangle 4s both infinite;
-  transition: bottom 0.4s ease, background-image 0.5s ease, opacity 0.4s ease;
+  transition:
+    bottom 0.4s ease,
+    background-image 0.5s ease,
+    opacity 0.4s ease;
   opacity: 1;
 
   &.move-up-arrow.move-up-arrow--bottom {
@@ -28,8 +31,8 @@ $move-up-arrow-url--colored: url("../../../assets/images/arrows/move_up_arrow_co
   }
 
   &.move-up-arrow--hidden {
-    opacity: 0; 
-    pointer-events: none; 
+    opacity: 0;
+    pointer-events: none;
   }
 
   @keyframes triangle {
@@ -46,6 +49,3 @@ $move-up-arrow-url--colored: url("../../../assets/images/arrows/move_up_arrow_co
     }
   }
 }
-
-
-

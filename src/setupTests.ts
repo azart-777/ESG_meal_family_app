@@ -6,11 +6,11 @@ import { TextEncoder, TextDecoder } from 'util';
 
 // Polyfill TextEncoder and TextDecoder
 if (typeof global.TextEncoder === 'undefined') {
-    global.TextEncoder = TextEncoder;
+  global.TextEncoder = TextEncoder;
 }
 
 if (typeof global.TextDecoder === 'undefined') {
-    global.TextDecoder = TextDecoder as unknown as typeof global.TextDecoder;
+  global.TextDecoder = TextDecoder as unknown as typeof global.TextDecoder;
 }
 
 configure({ adapter: new Adapter() });

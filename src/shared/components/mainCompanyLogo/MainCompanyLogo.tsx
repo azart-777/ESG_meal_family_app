@@ -1,5 +1,5 @@
-import React from "react";
-import { logos } from "../../../assets/images";
+import React from 'react';
+import { logos } from '../../../assets/images';
 
 export const MainCompanyLogo: React.FC = () => {
   return (

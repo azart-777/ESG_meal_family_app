@@ -1,13 +1,13 @@
-import React from "react";
-import "./EcoAppNetwork.scss";
-import { earth_images } from "../../../assets/images/";
-import { EcoAppNetworkItems } from "./EcoAppNetworkItems/EcoAppNetworkItems";
-import { useTranslation } from "react-i18next";
-import { ShortTextDescription } from "../../../shared/components/shortDescription/ShortTextDescription";
-import { MainCompanyLogo } from "../../../shared/components/mainCompanyLogo/MainCompanyLogo";
+import React from 'react';
+import './EcoAppNetwork.scss';
+import { earth_images } from '../../../assets/images/';
+import { EcoAppNetworkItems } from './EcoAppNetworkItems/EcoAppNetworkItems';
+import { useTranslation } from 'react-i18next';
+import { ShortTextDescription } from '../../../shared/components/shortDescription/ShortTextDescription';
+import { MainCompanyLogo } from '../../../shared/components/mainCompanyLogo/MainCompanyLogo';
 
 export const EcoAppNetwork: React.FC = () => {
-  const { t } = useTranslation(["pages/home-page"]);
+  const { t } = useTranslation(['pages/home-page']);
 
   return (
     <div className="eco-app-network">
@@ -17,7 +17,7 @@ export const EcoAppNetwork: React.FC = () => {
           <img
             className="eco-app-network__contain-earth-image"
             src={earth_images.home_earth_for_animation}
-            alt={t("EcoAppNetworkComponent.altEarthImg")}
+            alt={t('EcoAppNetworkComponent.altEarthImg')}
           />
           <div className="eco-app-network__contain-earth-logo">
             <MainCompanyLogo />

@@ -1,7 +1,4 @@
-import { Translation } from './Translation'
-import { ROUTING_CONSTANTS } from './routing/routing.constants'
+import { Translation } from './Translation';
+import { ROUTING_CONSTANTS } from './routing/routing.constants';
 
-export {
-    Translation,
-    ROUTING_CONSTANTS
-}
+export { Translation, ROUTING_CONSTANTS };

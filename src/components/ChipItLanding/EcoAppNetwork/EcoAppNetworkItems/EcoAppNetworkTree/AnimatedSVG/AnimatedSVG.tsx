@@ -1,5 +1,5 @@
-import React from "react";
-import "./AnimatedSVG.scss";
+import React from 'react';
+import './AnimatedSVG.scss';
 
 interface PathObject {
   id: string;
@@ -49,13 +49,13 @@ export const AnimatedSVG: React.FC<AnimatedSVGProps> = ({
 }) => {
   const getAnimationDuration = (id: string, defaultDuration: string) => {
     if (
-      id === "line13" ||
-      id === "line15" ||
-      id === "line17" ||
-      id === "line18" ||
-      id === "line19"
+      id === 'line13' ||
+      id === 'line15' ||
+      id === 'line17' ||
+      id === 'line18' ||
+      id === 'line19'
     ) {
-      return "5s";
+      return '5s';
     }
     return defaultDuration;
   };
@@ -119,14 +119,12 @@ export const AnimatedSVG: React.FC<AnimatedSVGProps> = ({
             cy="0"
             r="5"
             fill="rgb(0, 179, 15)"
-            filter="url(#glow)"
-          >
+            filter="url(#glow)">
             <animateMotion
               repeatCount={animationSettings.repeatCount}
               dur={getAnimationDuration(id, `${3 + index * 2}s`)}
               keyPoints="0;1;0"
-              keyTimes="0;0.5;1"
-            >
+              keyTimes="0;0.5;1">
               <mpath href={`#${id}`} />
             </animateMotion>
           </circle>

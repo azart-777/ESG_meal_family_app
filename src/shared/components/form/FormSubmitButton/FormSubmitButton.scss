@@ -9,8 +9,7 @@ $letter-spacing: -1px;
 
 $text-color: colors.$black-text;
 $background-highlight-color: colors.$app-accent;
-$background-base-color: darken($background-highlight-color,35%);
-
+$background-base-color: darken($background-highlight-color, 35%);
 
 button.MuiButton-root {
   border-radius: 30px;
@@ -23,7 +22,11 @@ button.MuiButton-root {
   height: 2.4em;
   text-transform: none;
   color: $text-color;
-  background: linear-gradient(90deg, $background-highlight-color 23.44%, $background-base-color 100%);
+  background: linear-gradient(
+    90deg,
+    $background-highlight-color 23.44%,
+    $background-base-color 100%
+  );
   letter-spacing: $letter-spacing;
 
   @include r.responsive(desktop) {
@@ -31,6 +34,10 @@ button.MuiButton-root {
   }
 
   &.Mui-disabled {
-    background: linear-gradient(90deg, darken($background-highlight-color,35%) 23.44%, darken($background-base-color, 35%) 100%);
+    background: linear-gradient(
+      90deg,
+      darken($background-highlight-color, 35%) 23.44%,
+      darken($background-base-color, 35%) 100%
+    );
   }
 }

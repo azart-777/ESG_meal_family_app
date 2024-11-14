@@ -1,6 +1,6 @@
 @use './shared/styles/variables/colors' as colors;
-@import "shared/styles/base/global-fonts";
-@import "shared/styles/base/spacings";
+@import 'shared/styles/base/global-fonts';
+@import 'shared/styles/base/spacings';
 
 * {
   margin: 0;
@@ -12,10 +12,9 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .App {
   background-color: colors.$base-background-color;
   color: colors.$base-white-color;
   height: 100%;
-  width: 100%;  
+  width: 100%;
 }

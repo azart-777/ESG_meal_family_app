@@ -45,11 +45,11 @@ $space--3xl: 160px;
 }
 
 @include generate-spacing-classes(
-    (xs, $space--xs),
-    (sm, $space--sm),
-    (md, $space--md),
-    (l, $space--l),
-    (xl, $space--xl),
-    (xxl, $space--xxl),
-    (3xl, $space--3xl)
+  (xs, $space--xs),
+  (sm, $space--sm),
+  (md, $space--md),
+  (l, $space--l),
+  (xl, $space--xl),
+  (xxl, $space--xxl),
+  (3xl, $space--3xl)
 );

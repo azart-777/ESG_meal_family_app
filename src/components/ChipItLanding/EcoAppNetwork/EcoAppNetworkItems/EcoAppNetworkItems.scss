@@ -1,7 +1,7 @@
-@use "./../../../../shared/styles/mixins/no-user-text-selection" as n;
-@use "./../../../../shared/styles/mixins/responsive" as r;
-@use "./../../../../shared/styles/variables/colors" as colors;
-@use "./../../../../shared/styles/variables/fonts" as fonts;
+@use './../../../../shared/styles/mixins/no-user-text-selection' as n;
+@use './../../../../shared/styles/mixins/responsive' as r;
+@use './../../../../shared/styles/variables/colors' as colors;
+@use './../../../../shared/styles/variables/fonts' as fonts;
 
 .eco-app-network__list {
   display: flex;

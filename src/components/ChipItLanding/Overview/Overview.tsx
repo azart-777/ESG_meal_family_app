@@ -1,6 +1,6 @@
-import React from "react";
-import "./Overview.scss";
-import { phones } from "../../../assets/images/index";
+import React from 'react';
+import './Overview.scss';
+import { phones } from '../../../assets/images/index';
 
 export const Overview: React.FC = () => {
   return (

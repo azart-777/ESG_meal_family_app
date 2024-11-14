@@ -1,6 +1,6 @@
-import React from "react";
-import { DescriptionCard } from "./DescriptionCard/DescriptionCard";
-import { contentData } from "./DataDescription/DataDescription";
+import React from 'react';
+import { DescriptionCard } from './DescriptionCard/DescriptionCard';
+import { contentData } from './DataDescription/DataDescription';
 
 export const CompanyCards: React.FC = () => {
   return (
